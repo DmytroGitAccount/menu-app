@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'Barlow';
+	src: url('../fonts/Barlow-Regular.ttf');
+}
+
+$main-text: #ffffff;
+$second-text: #abbbc2;
+$main-black: #1f1d2b;
+$second-black: #252836;
+$primary-color: #ea7c69;
+$border-color: #393c49;
+$dangerous-color: #ff7ca3;
+$form-background: #2d303e;
+$back-filter: rgba(0, 0, 0, 0.7);
+$transparent-primary: #ea7c6952;
+
+body {
+	background: gray;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 140%;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+}
+h3 {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 130%;
+}
+h4 {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+p {
+	color: $second-text;
+	font-weight: thin;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+hr {
+	background: $border-color;
+}
+button {
+	color: $main-text;
+}
+
+input[type='number'] {
+	width: 48px;
+	padding: 0 10px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+}
+input {
+	color: $main-text;
+}

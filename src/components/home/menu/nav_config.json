@@ -1,0 +1,34 @@
+{
+    "navigationBtns": [
+        {
+            "id": "sk35kl",
+            "name": "Hot Dishes",
+            "category": "hot_dishes"
+        },
+        {
+            "id": "aslk39",
+            "name": "Cold Dishes",
+            "category": "cold_dishes"
+        },
+        {
+            "id": "etiwer",
+            "name": "Soup",
+            "category": "soup"
+        },
+        {
+            "id": "weoptw",
+            "name": "Grill",
+            "category": "grill"
+        },
+        {
+            "id": "qpitwe",
+            "name": "Appetizer",
+            "category": "appetizer"
+        },
+        {
+            "id": "twncio",
+            "name": "Dessert",
+            "category": "dessert"
+        }
+    ]
+}

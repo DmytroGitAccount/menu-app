@@ -1,0 +1,12 @@
+[
+    {
+        "id": 2,
+        "name": "Popular",
+        "value": "popular"
+    },
+    {
+        "id": 3,
+        "name": "Cheap",
+        "value": "cheap"
+    }
+]

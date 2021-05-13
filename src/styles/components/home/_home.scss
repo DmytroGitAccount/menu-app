@@ -1,0 +1,87 @@
+.home {
+	display: flex;
+
+	@import './menu';
+	@import './order';
+
+	.list {
+		gap: 24px;
+		display: flex;
+		height: 454px;
+		overflow: scroll;
+		padding-top: 23px;
+		flex-direction: column;
+		border-top: 1px solid $border-color;
+		border-bottom: 1px solid $border-color;
+	}
+
+	.listItem {
+		display: grid;
+		gap: 10px 16px;
+		align-items: center;
+		grid-template-columns: 5fr 1fr 1fr;
+
+		.description {
+			gap: 8px;
+			flex: 2.5;
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 40px;
+				clip-path: circle(20px at 20px 20px);
+			}
+
+			h3 {
+				margin: 6px 0;
+				line-height: 110%;
+
+				&:last-child {
+					font-size: 12px;
+					color: $second-text;
+				}
+			}
+		}
+		.total {
+			font-size: 16px;
+			text-align: right;
+		}
+		.comment {
+			input {
+				width: 100%;
+				padding: 14px;
+			}
+			grid-column: 1/3;
+		}
+
+		input {
+			@include formElement();
+			background: $second-black;
+		}
+
+		button {
+			width: 48px;
+			height: 48px;
+			border-radius: 8px;
+			border: 1px solid $dangerous-color;
+		}
+	}
+
+	.footer {
+		gap: 16px;
+		display: flex;
+		flex-direction: column;
+		.row {
+			@include flexCenterBetween();
+
+			h4 {
+				color: $second-text;
+			}
+			p {
+				color: $main-text;
+			}
+		}
+	}
+
+	@import './payment_popup';
+}

@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	user-select: none;
+	font-family: 'Barlow';
+	box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+	height: 100%;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: none;
+}
+hr {
+	height: 1px;
+	border: none;
+	background: white;
+}
+
+select {
+	border: none;
+	outline: none;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+input {
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	-moz-appearance: textfield;
+}
