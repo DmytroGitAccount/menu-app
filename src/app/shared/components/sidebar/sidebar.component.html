@@ -1,0 +1,27 @@
+<div
+	[style.width.px]="104"
+	class="d-flex flex-column justify-content-between align-items-center h-100 py-4 rounded-4 bg-dark"
+>
+	<button tabindex="1" routerLink="home" class="bg-primary bg-opacity-25">
+		<app-svg-icon src="assets/icons/Logo.svg"></app-svg-icon>
+	</button>
+
+	<div class="d-flex flex-column gap-4">
+		<ng-container *ngFor="let button of buttons">
+			<div
+				routerLinkActive="active"
+				[routerLink]="button.page"
+				class="sidebar-item position-relative"
+			>
+				<button tabindex="1">
+					<app-svg-icon [src]="'assets/icons/' + button.name + '.svg'"></app-svg-icon>
+				</button>
+				<span></span>
+			</div>
+		</ng-container>
+	</div>
+
+	<button tabindex="1" routerLink="logout">
+		<app-svg-icon src="assets/icons/Logout.svg"></app-svg-icon>
+	</button>
+</div>

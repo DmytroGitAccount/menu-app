@@ -1,0 +1,57 @@
+button {
+	width: 56px;
+	height: 56px;
+	border-radius: 8px;
+
+	::ng-deep path {
+		fill: var(--bs-primary);
+	}
+}
+
+.sidebar-item {
+	padding: 13px 12px 11px 12px;
+
+	&.active {
+		background: var(--bs-gray-400);
+		border-radius: 12px 0 0 12px;
+
+		button {
+			background: var(--bs-primary);
+			box-shadow: -8px 8px 24px rgba(234, 124, 105, 0.5);
+
+			::ng-deep path {
+				fill: #fff;
+			}
+		}
+
+		span {
+			top: -12px;
+			right: -12px;
+			width: 12px;
+			height: 104px;
+			position: absolute;
+			background: var(--bs-gray-400);
+		}
+
+		&::after,
+		&::before {
+			z-index: 1;
+			content: '';
+			width: 12px;
+			height: 12px;
+			right: -12px;
+			position: absolute;
+			background: var(--bs-dark);
+		}
+
+		&::before {
+			top: -12px;
+			border-radius: 0 0 12px 0;
+		}
+
+		&::after {
+			bottom: -12px;
+			border-radius: 0 12px 0 0;
+		}
+	}
+}
