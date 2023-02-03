@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/utils';
+@import 'styles/overrides/index';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	user-select: none;
+	font-family: 'Barlow';
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: none;
+}
+
+hr {
+	height: 1px;
+	border: none;
+	background: white;
+}
+
+select {
+	border: none;
+	outline: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+input {
+	-moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+hr {
+	background: #393c49;
+}
+
+button {
+	color: #ffffff;
+}
+
+input[type='number'] {
+	width: 48px;
+	padding: 0 10px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+input {
+	color: #ffffff;
+}
