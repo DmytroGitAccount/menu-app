@@ -9,7 +9,7 @@ const routes: Routes = [
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },
 	{
 		path: 'home',
-		component: ConstructionPageComponent,
+		loadChildren: () => import('src/app/pages/home/home.module').then((m) => m.HomeModule),
 	},
 	{
 		path: 'discount',

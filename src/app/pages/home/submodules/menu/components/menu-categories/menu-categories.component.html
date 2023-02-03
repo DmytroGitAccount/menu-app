@@ -1,0 +1,7 @@
+<div class="d-flex gap-2">
+	<ng-container *ngFor="let category of categories">
+		<button class="btn btn-sm btn-link" (click)="selectCategory(category.id)">
+			{{ category.name }}
+		</button>
+	</ng-container>
+</div>

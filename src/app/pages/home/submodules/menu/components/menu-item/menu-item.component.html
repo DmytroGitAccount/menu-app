@@ -1,0 +1,16 @@
+<div class="dishCard position-relative mx-auto pointer" (click)="selectDish()">
+	<img
+		class="position-absolute top-0 start-50 translate-middle-x"
+		[src]="dish.imageUrl"
+		alt="Dish Picture"
+		draggable="false"
+	/>
+
+	<div class="card">
+		<div class="text">
+			<h3>{{ dish.name }}</h3>
+			<h4>{{ dish.price }}</h4>
+			<h4 class="text-gray-100">{{ dish.available }} Bowls available</h4>
+		</div>
+	</div>
+</div>
