@@ -11,10 +11,12 @@
 	<div class="flex-grow-1">
 		<div class="h-100 position-relative overflow-auto">
 			<div class="row position-absolute all-0">
-				<ng-container *ngFor="let dish of dishes">
-					<div class="col-4 mb-4">
-						<app-menu-item [dish]="dish"></app-menu-item>
-					</div>
+				<ng-container *ngIf="dishes$ | async as dishes">
+					<ng-container *ngFor="let dish of dishes">
+						<div class="col-4 mb-4">
+							<app-menu-item [dish]="dish"></app-menu-item>
+						</div>
+					</ng-container>
 				</ng-container>
 			</div>
 		</div>

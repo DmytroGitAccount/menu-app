@@ -1,9 +1,9 @@
 // Libraries Imports
+import { Store } from '@ngrx/store';
 import { Component } from '@angular/core';
 
 // Project Imports
-import { DishModel } from 'src/app/core/models';
-import { dishesMock } from 'src/app/core/mocks';
+import { selectDishes, loadDishes } from 'src/app/pages/home/+store';
 
 @Component({
 	selector: 'app-menu',
@@ -11,7 +11,9 @@ import { dishesMock } from 'src/app/core/mocks';
 	styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent {
-	public dishes: DishModel[] = dishesMock;
+	public dishes$ = this.store.select(selectDishes);
 
-	constructor() {}
+	constructor(private store: Store) {
+		this.store.dispatch(loadDishes());
+	}
 }
