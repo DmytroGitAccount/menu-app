@@ -2,38 +2,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-// Local Imports
-import { ConstructionPageComponent } from './shared/components/construction-page/construction-page.component';
-
 const routes: Routes = [
-	{ path: '', redirectTo: 'home', pathMatch: 'full' },
 	{
-		path: 'home',
-		loadChildren: () => import('src/app/pages/home/home.module').then((m) => m.HomeModule),
+		path: 'login',
+		loadChildren: () => import('src/app/pages/login/login.module').then((m) => m.LoginModule),
 	},
 	{
-		path: 'discount',
-		component: ConstructionPageComponent,
-	},
-	{
-		path: 'dashboard',
-		component: ConstructionPageComponent,
-	},
-	{
-		path: 'message',
-		component: ConstructionPageComponent,
-	},
-	{
-		path: 'notifications',
-		component: ConstructionPageComponent,
-	},
-	{
-		path: 'settings',
-		component: ConstructionPageComponent,
-	},
-	{
-		path: 'logout',
-		component: ConstructionPageComponent,
+		path: '',
+		loadChildren: () => import('src/app/pages/shell/shell.module').then((m) => m.ShellModule),
 	},
 ];
 

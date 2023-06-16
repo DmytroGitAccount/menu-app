@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 	styleUrls: ['./menu-header.component.scss'],
 })
 export class MenuHeaderComponent {
-	public readonly today = DateTime.now().toISO();
+	public readonly today = DateTime.now().toISO() as string;
 }
