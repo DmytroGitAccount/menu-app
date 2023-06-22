@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+// Libraries Imports
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-payment-form',
-  templateUrl: './payment-form.component.html',
-  styleUrls: ['./payment-form.component.scss']
+	selector: 'app-payment-form',
+	templateUrl: './payment-form.component.html',
+	styleUrls: ['./payment-form.component.scss'],
 })
-export class PaymentFormComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class PaymentFormComponent {}

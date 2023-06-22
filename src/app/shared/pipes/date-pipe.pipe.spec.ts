@@ -3,8 +3,11 @@ import { DatePipePipe } from './date-pipe.pipe';
 describe('DatePipePipe', () => {
 	let pipe: DatePipePipe;
 
-	it('should create an instance', () => {
+	beforeEach(() => {
 		pipe = new DatePipePipe();
+	});
+
+	it('should create an instance', () => {
 		expect(pipe).toBeTruthy();
 	});
 

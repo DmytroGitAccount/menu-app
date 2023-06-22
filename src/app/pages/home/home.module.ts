@@ -9,7 +9,7 @@ import { MenuModule } from './submodules/menu/menu.module';
 import { OrderModule } from './submodules/order/order.module';
 import { PaymentModule } from './submodules/payment/payment.module';
 
-import { HomeComponent } from './home.component';
+import { HomeComponent } from './components/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { homeReducer, HOME_STATE_KEY, HomeEffects } from './+store';

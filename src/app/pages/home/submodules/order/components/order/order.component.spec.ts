@@ -2,18 +2,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 // Local Imports
-import { PaymentFormComponent } from './payment-form.component';
+import { OrderComponent } from './order.component';
 
-describe('PaymentFormComponent', () => {
-	let component: PaymentFormComponent;
-	let fixture: ComponentFixture<PaymentFormComponent>;
+describe('OrderComponent', () => {
+	let component: OrderComponent;
+	let fixture: ComponentFixture<OrderComponent>;
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [PaymentFormComponent],
+			declarations: [OrderComponent],
 		}).compileComponents();
 
-		fixture = TestBed.createComponent(PaymentFormComponent);
+		fixture = TestBed.createComponent(OrderComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});
