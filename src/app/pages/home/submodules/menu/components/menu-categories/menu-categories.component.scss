@@ -1,0 +1,37 @@
+$primary-color: var(--bs-primary);
+$border-color: var(--bs-gray-800);
+
+.navigation {
+	gap: 33px;
+	display: flex;
+	position: relative;
+	border-bottom: 1px solid $border-color;
+
+	li {
+		height: 33px;
+		cursor: pointer;
+		min-width: 36.5px;
+
+		button {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 140%;
+			margin-top: 1.5px;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+		&.active button {
+			color: $primary-color;
+		}
+		&.active span {
+			height: 3px;
+			width: 37px;
+			bottom: -2px;
+			border-radius: 3px;
+			position: absolute;
+			background: $primary-color;
+		}
+	}
+}

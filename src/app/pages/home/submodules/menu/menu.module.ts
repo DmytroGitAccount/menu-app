@@ -1,5 +1,6 @@
 // Libraries Imports
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -14,7 +15,7 @@ import { MenuCategoriesComponent } from './components/menu-categories/menu-categ
 
 @NgModule({
 	declarations: [MenuComponent, MenuItemComponent, MenuHeaderComponent, MenuCategoriesComponent],
-	imports: [CommonModule, HttpClientModule, SharedModule],
+	imports: [CommonModule, HttpClientModule, SharedModule, FormsModule],
 	exports: [MenuComponent],
 })
 export class MenuModule {}

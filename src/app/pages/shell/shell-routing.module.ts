@@ -19,7 +19,19 @@ const routes: Routes = [
 				loadChildren: () => import('src/app/pages/home/home.module').then((m) => m.HomeModule),
 			},
 			{
+				path: 'discount',
+				component: ConstructionPageComponent,
+			},
+			{
 				path: 'dashboard',
+				component: ConstructionPageComponent,
+			},
+			{
+				path: 'message',
+				component: ConstructionPageComponent,
+			},
+			{
+				path: 'notifications',
 				component: ConstructionPageComponent,
 			},
 			{

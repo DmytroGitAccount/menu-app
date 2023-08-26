@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 // Project Imports
+import { DishCategory } from 'src/app/core/models';
 import { dishCategoryMock } from 'src/app/core/mocks';
 
 @Component({
@@ -12,10 +13,12 @@ import { dishCategoryMock } from 'src/app/core/mocks';
 })
 export class MenuCategoriesComponent {
 	public readonly categories = dishCategoryMock;
+	public selectedCategory!: DishCategory;
 
 	constructor(private router: Router) {}
 
-	public selectCategory(id: number) {
-		this.router.navigate([], { queryParams: { category: id }, replaceUrl: true });
+	public selectCategory(category: DishCategory) {
+		this.selectedCategory = category;
+		this.router.navigate([], { queryParams: { category: category.id }, replaceUrl: true });
 	}
 }

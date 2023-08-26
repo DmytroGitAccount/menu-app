@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class MenuHeaderComponent {
 	public readonly today = DateTime.now().toISO() as string;
+
+	public search!: string;
 }
