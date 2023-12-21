@@ -13,5 +13,9 @@
 		<app-order-list [orders]="(orders$ | async) || []"></app-order-list>
 	</div>
 
-	<button class="pay">Continue To Payment</button>
+	<button class="pay" (click)="togglePayment()">Continue To Payment</button>
 </div>
+
+<ng-container *ngIf="isPaymentOpened">
+	<app-payment-menu (close)="togglePayment()"></app-payment-menu>
+</ng-container>

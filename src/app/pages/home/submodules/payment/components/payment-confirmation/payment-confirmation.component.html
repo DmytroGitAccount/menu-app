@@ -1,0 +1,30 @@
+<section class="confirmation d-flex flex-column h-100">
+	<header class="d-flex justify-content-between align-items-center">
+		<div class="d-flex flex-column gap-2">
+			<h1 class="m-0">Confirmation</h1>
+			<p class="m-0">Orders #34562</p>
+		</div>
+		<button class="add-order">
+			<app-svg-icon src="assets/icons/PlusSign.svg"></app-svg-icon>
+		</button>
+	</header>
+
+	<ul class="flex-grow-1 m-0 p-0">
+		<ng-container *ngIf="orders$ | async as orders">
+			<ng-container *ngFor="let order of orders">
+				{{ order.name }}
+			</ng-container>
+		</ng-container>
+	</ul>
+
+	<div class="d-flex flex-column gap-3">
+		<div class="d-flex justify-content-between">
+			<h4 class="m-0">Discount</h4>
+			<p class="m-0">$0</p>
+		</div>
+		<div class="d-flex justify-content-between">
+			<h4 class="m-0">Sub total</h4>
+			<p class="m-0">$0</p>
+		</div>
+	</div>
+</section>

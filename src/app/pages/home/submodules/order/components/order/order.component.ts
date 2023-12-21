@@ -12,6 +12,7 @@ import { selectOrders } from 'src/app/pages/home/+store';
 })
 export class OrderComponent {
 	public orders$ = this.store.select(selectOrders);
+	public isPaymentOpened = false;
 
 	public optionsBtns = [
 		{ id: 1, name: 'Dine In', value: 'dine_in' },
@@ -20,4 +21,8 @@ export class OrderComponent {
 	];
 
 	constructor(private store: Store) {}
+
+	public togglePayment() {
+		this.isPaymentOpened = !this.isPaymentOpened;
+	}
 }

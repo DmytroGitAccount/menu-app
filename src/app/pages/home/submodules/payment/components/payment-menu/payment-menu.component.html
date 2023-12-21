@@ -1,0 +1,19 @@
+<section class="backgrop position-absolute top-0 start-0 w-100 h-100">
+	<div class="d-flex justify-content-end h-100">
+		<div class="w-100 h-100" (click)="close.emit()"></div>
+		<div class="d-flex bg-dark">
+			<div class="d-flex flex-column">
+				<div class="pt-4 px-4">
+					<button class="back" (click)="close.emit()">
+						<app-svg-icon src="assets/icons/BackArrow.svg"></app-svg-icon>
+					</button>
+				</div>
+
+				<div class="flex-grow-1">
+					<app-payment-confirmation></app-payment-confirmation>
+				</div>
+			</div>
+			<app-payment></app-payment>
+		</div>
+	</div>
+</section>

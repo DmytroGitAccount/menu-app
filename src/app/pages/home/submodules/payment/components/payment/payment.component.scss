@@ -1,0 +1,83 @@
+.header {
+	margin-top: 49px;
+}
+
+.payment {
+	gap: 24px;
+	width: 409px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	border-left: 1px solid gray;
+
+	.payment-form {
+		gap: 16px;
+		display: flex;
+		flex-direction: column;
+		.divider {
+			margin-top: 8px;
+		}
+
+		.payment-methods {
+			gap: 8px;
+			display: flex;
+
+			button {
+				width: 101px;
+				height: 64px;
+				border-radius: 8px;
+				border: 1px solid gray;
+			}
+		}
+		label {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 130%;
+		}
+
+		input {
+			width: 100%;
+			display: block;
+			margin-top: 8px;
+			padding: 0 14px;
+			background: gray;
+		}
+
+		select {
+			width: 173px;
+			display: block;
+			padding: 0 14px;
+			margin-top: 8px;
+			color: white;
+			background: black;
+		}
+
+		.flex {
+			gap: 13px;
+			display: flex;
+		}
+	}
+
+	.control {
+		margin-top: 65px;
+	}
+}
+
+.btn {
+	width: 175px;
+	height: 48px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 140%;
+	border-radius: 8px;
+}
+
+.confirm {
+	background-color: orangered;
+}
+.cancel {
+	color: orangered;
+	border: 1px solid orangered;
+}
