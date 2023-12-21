@@ -1,0 +1,29 @@
+.options {
+	gap: 8px;
+	display: flex;
+
+	button {
+		padding: 8px 12px;
+		border-radius: 8px;
+		color: orange;
+		letter-spacing: 0.1px;
+		border: 1px solid gray;
+	}
+
+	li.active button {
+		color: white;
+		background: orange;
+		border-color: orange;
+	}
+}
+
+.pay {
+	height: 48px;
+	font-size: 14px;
+	margin-top: 19px;
+	font-weight: 600;
+	line-height: 140%;
+	border-radius: 8px;
+	background: orange;
+	box-shadow: 0px 8px 24px orange;
+}

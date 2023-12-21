@@ -1,0 +1,30 @@
+<div class="orderList d-flex flex-column gap-4 h-100">
+	<div class="header">
+		<p class="m-0">Item</p>
+		<p class="m-0">Qty</p>
+		<p class="m-0">Price</p>
+	</div>
+
+	<ul class="flex-grow-1 m-0 p-0 list border-top border-bottom border-gray-300">
+		<div class="h-100 position-relative overflow-auto">
+			<div class="position-absolute top-0 end-0">
+				<div class="d-flex flex-column gap-4 py-4">
+					<ng-container *ngFor="let order of orders">
+						<app-order-item [orderItem]="order"></app-order-item>
+					</ng-container>
+				</div>
+			</div>
+		</div>
+	</ul>
+
+	<div class="footer">
+		<div class="d-flex justify-content-between">
+			<h4 class="m-0">Discount</h4>
+			<p class="m-0">{{ 1.0 | currency }}</p>
+		</div>
+		<div class="d-flex justify-content-between">
+			<h4 class="m-0">Subtotal</h4>
+			<p class="m-0">{{ 12.1 | currency }}</p>
+		</div>
+	</div>
+</div>

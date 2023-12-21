@@ -15,7 +15,9 @@ export class MenuCategoriesComponent {
 	public readonly categories = dishCategoryMock;
 	public selectedCategory!: DishCategory;
 
-	constructor(private router: Router) {}
+	constructor(private router: Router) {
+		this.selectCategory(this.categories[0]);
+	}
 
 	public selectCategory(category: DishCategory) {
 		this.selectedCategory = category;

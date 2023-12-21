@@ -1,1 +1,31 @@
-<p>order-item works!</p>
+<div class="listItem">
+	<div class="description">
+		<img [src]="orderItem.imageUrl" alt="dish" />
+
+		<div class="text">
+			<h3>{{ orderItem.name }}</h3>
+			<h3>{{ orderItem.price | currency }}</h3>
+		</div>
+	</div>
+
+	<form class="portions">
+		<input
+			min="1"
+			type="number"
+			name="portions"
+			[placeholder]="orderItem.portions"
+			[max]="orderItem.available"
+			[value]="orderItem.portions"
+		/>
+	</form>
+
+	<h4 class="total">{{ 2.4 | currency }}</h4>
+
+	<form class="comment">
+		<input name="comment" type="text" [placeholder]="orderItem.comment || 'Order Note...'" />
+	</form>
+
+	<button class="border border-danger rounded" (click)="removeFromOrder()">
+		<app-svg-icon src="assets/icons/TrashCan.svg"></app-svg-icon>
+	</button>
+</div>

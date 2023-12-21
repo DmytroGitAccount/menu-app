@@ -1,1 +1,17 @@
-<p>order works!</p>
+<div class="d-flex flex-column gap-4 h-100">
+	<h2>Orders #34562</h2>
+
+	<ul class="options p-0 m-0">
+		<ng-container *ngFor="let btn of optionsBtns">
+			<li>
+				<button>{{ btn.name }}</button>
+			</li>
+		</ng-container>
+	</ul>
+
+	<div class="flex-grow-1">
+		<app-order-list [orders]="(orders$ | async) || []"></app-order-list>
+	</div>
+
+	<button class="pay">Continue To Payment</button>
+</div>

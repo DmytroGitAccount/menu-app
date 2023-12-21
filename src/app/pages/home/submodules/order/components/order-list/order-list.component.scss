@@ -1,0 +1,35 @@
+.orderList {
+	gap: 24px;
+	display: flex;
+	flex-direction: column;
+
+	.header {
+		display: flex;
+
+		p {
+			&:first-child {
+				flex: 2.5;
+				text-align: left;
+			}
+
+			flex: 1;
+			text-align: right;
+			font-weight: 600;
+			color: white;
+		}
+	}
+}
+
+.footer {
+	gap: 16px;
+	display: flex;
+	flex-direction: column;
+	.row {
+		h4 {
+			color: gray;
+		}
+		p {
+			color: white;
+		}
+	}
+}
