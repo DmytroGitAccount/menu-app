@@ -10,42 +10,5 @@ import { OrderModel } from 'src/app/core/models';
 	styleUrls: ['./order-list.component.scss'],
 })
 export class OrderListComponent {
-	@Input() orders: OrderModel[] = [
-		{
-			id: '123',
-			name: 'Some name',
-			price: 12,
-			comment: 'Some Comment',
-			portions: 1,
-			imageUrl: '',
-			available: 1,
-		},
-		{
-			id: '123',
-			name: 'Some name',
-			price: 12,
-			comment: 'Some Comment',
-			portions: 1,
-			imageUrl: '',
-			available: 1,
-		},
-		{
-			id: '123',
-			name: 'Some name',
-			price: 12,
-			comment: 'Some Comment',
-			portions: 1,
-			imageUrl: '',
-			available: 1,
-		},
-		{
-			id: '123',
-			name: 'Some name',
-			price: 12,
-			comment: 'Some Comment',
-			portions: 1,
-			imageUrl: '',
-			available: 1,
-		},
-	];
+	@Input() orders!: OrderModel[];
 }

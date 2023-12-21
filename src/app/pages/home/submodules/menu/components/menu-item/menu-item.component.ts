@@ -21,7 +21,8 @@ export class MenuItemComponent {
 		const orderItem: OrderModel = {
 			id: this.dish.id,
 			name: this.dish.name,
-			price: this.dish.price,
+			dishPrice: this.dish.price,
+			totalPrice: this.dish.price,
 			available: this.dish.available,
 			imageUrl: this.dish.imageUrl,
 			portions: 1,

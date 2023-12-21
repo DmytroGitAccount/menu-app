@@ -48,13 +48,16 @@ function addToOrderUpdateState(orders: OrderModel[], orderItem: OrderModel): Ord
 	if (existingItem) {
 		const restOrders = orders.filter((order) => order.id !== existingItem.id);
 
+		const portions =
+			existingItem.available > existingItem.portions
+				? existingItem.portions + 1
+				: existingItem.portions;
+
 		return [
 			{
 				...orderItem,
-				portions:
-					existingItem.available > existingItem.portions
-						? existingItem.portions + 1
-						: existingItem.portions,
+				portions: portions,
+				totalPrice: orderItem.dishPrice * portions,
 			},
 			...restOrders,
 		];

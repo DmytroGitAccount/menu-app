@@ -4,7 +4,7 @@
 
 		<div class="text">
 			<h3>{{ orderItem.name | truncate : [20, '...'] }}</h3>
-			<h3>{{ orderItem.price | currency }}</h3>
+			<h3>{{ orderItem.dishPrice | currency }}</h3>
 		</div>
 	</div>
 
@@ -19,7 +19,7 @@
 		/>
 	</form>
 
-	<h4 class="total">{{ 2.4 | currency }}</h4>
+	<h4 class="total">{{ orderItem.totalPrice | currency }}</h4>
 
 	<form class="comment">
 		<input name="comment" type="text" [placeholder]="orderItem.comment || 'Order Note...'" />

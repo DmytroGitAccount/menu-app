@@ -1,7 +1,8 @@
 export interface OrderModel {
 	id: string;
 	name: string;
-	price: number;
+	dishPrice: number;
+	totalPrice: number;
 	portions: number;
 	available: number;
 	imageUrl: string;
