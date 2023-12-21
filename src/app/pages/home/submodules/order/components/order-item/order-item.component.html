@@ -3,7 +3,7 @@
 		<img [src]="orderItem.imageUrl" alt="dish" />
 
 		<div class="text">
-			<h3>{{ orderItem.name }}</h3>
+			<h3>{{ orderItem.name | truncate : [20, '...'] }}</h3>
 			<h3>{{ orderItem.price | currency }}</h3>
 		</div>
 	</div>

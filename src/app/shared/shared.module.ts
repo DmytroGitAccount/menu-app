@@ -8,10 +8,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { DatePipePipe } from './pipes/date-pipe.pipe';
 import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
 import { ConstructionPageComponent } from './components/construction-page/construction-page.component';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 @NgModule({
 	imports: [CommonModule, RouterModule, HttpClientModule],
-	declarations: [SvgIconComponent, ConstructionPageComponent, DatePipePipe],
-	exports: [DatePipePipe, SvgIconComponent],
+	declarations: [SvgIconComponent, ConstructionPageComponent, DatePipePipe, TruncatePipe],
+	exports: [DatePipePipe, TruncatePipe, SvgIconComponent],
 })
 export class SharedModule {}
